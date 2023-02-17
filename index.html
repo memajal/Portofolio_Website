@@ -17,17 +17,20 @@
 
     <!-- add css files that have the specific style for specific parts of the website-->
     <link rel="stylesheet" href="css/header.css" />
-
+    <link rel="stylesheet" href="css/presentation.css" />
 </head>
 
 
 <body>
-    <header>
-        <!-- The header will contains the logo in the left and the main menu in the right.
-              For mobile sizes the menu will be a toogle menu that will open when the user click bar and it will be hidden in dskt.
-              For desktop sizes the main menu will have the links and it will be hidden in mobile.-->
 
-        <img id="logo" src="img/logo.png" />
+    <!-- The header will contains the logo in the left and the main menu in the right.
+              For mobile sizes the menu will be a toogle menu that will open when the user click bar and it will be hidden in dskt.
+              For desktop sizes the main menu will have the links and it will be hidden in mobile.
+     -->
+    <header>
+
+        <!-- The Website Logo-->
+        <img id="logo" src="img/logo.png" alt="the website logo" />
 
         <!-- Toogle Menu will have the bars that will open the mobile nav when the user click-->
         <div id="mobile_nav">
@@ -57,7 +60,35 @@
         </nav>
     </header>
 
+    <!-- the main part of the website will have: 
+        1. the div presentation part 
+        2. 
+    ...-->
+    <main>
 
+        <!-- the presentation part of the website will have a description about me and my photo-->
+        <div id="presentation">
+            <!-- the div part of short description of me-->
+            <div id="presentation_content">
+                <div id="description">
+                    <h1> Hi! I am Alketa Memaj</h1>
+                    <h2>A front-end web developer...</h2>
+                    <p id="type_text">
+                        I want to transform my knowledge and my experience in personal websites,into a real job
+                        that I will make with pasion and that will give me satisfaction.
+                        Do you want to know more about me ? Follow me...";
+                    </p>
+                </div>
+
+                <!-- my photo-->
+                <img id="presentation_img" src="img/about_me.png" alt="my photo image">
+            </div>
+
+            <!-- arrow image to move to the next section-->
+            <img src="img/arrow.png" alt="Arrow that moves to the next section of the website" />
+        </div>
+
+    </main>
 
 
 </body>

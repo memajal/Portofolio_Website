@@ -1,97 +1,104 @@
 ﻿
 /* This file will contain the header style of the website*/
 
-/* css the same header design for mobile screen sizes from 0-768px, */
+/* the header will be on the top of the screen with black bcg color*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212121;
+}
+
+header img {
+    position: absolute;
+}
+
+
+ /*the header design for mobile screen sizes 0-768px, */
 
 @media all and (min-width:0px) and (max-width: 768px) {
-    header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 70px;
-        background-color: #212121;
+  
+   header {
+    height: 70px; /*header height 70px for mobile*/
+   }
+
+   /*the destop menu will be hiden and the mobile menu nav also because it will open when the toogle menu is clicked*/
+    header #desktop_menu, header #mobile-menu {
+     display: none;
     }
 
-        /*the destop menu will be hiden and the mobile menu nav also because it will open when the toogle menu is clicked*/
-        header #desktop_menu, header #mobile-menu {
-            display: none;
-        }
+   /*the header image will be position in the left of the header with 50px width and height*/
+    header img {
+     top: 10px;
+     left: 10px;
+     width: 50px;
+     height: 50px;
+    }
 
-        /*the header image will be position in the left of the header with 50px width and height*/
-        header img {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 50px;
-            height: 50px;
-        }
+    /* toogle menu will be positioned in the right of the mobile screen sizes*/
+    header #mobile_nav {
+     display: block;
+     position: absolute;
+     right: 10px;
+     top: 16px;
+    }
 
-        /* toogle menu will be positioned in the right of the mobile screen sizes*/
-        header #mobile_nav {
-            display: block;
-            position: absolute;
-            right: 10px;
-            top: 16px;
-        }
-
-            /* css creation of toogle mobile menu 3 lines of 3 divs with the aqua color*/
-            header #mobile_nav div {
-                width: 35px;
-                height: 3px;
-                background-color: #00ffff;
-                margin: 6px 0;
-            }
-/* the header will be on the top of the screen with black bcg color and 70px height*/
+   /* css creation of toogle mobile menu 3 lines of 3 divs with the aqua color*/
+    header #mobile_nav div {
+     width: 35px;
+     height: 3px;
+     background-color: #00ffff;
+     margin: 6px 0;
+    }
 }
+
+/* the header design for desktop screen from 769px, */
 @media all and (min-width:769px) {
 
     header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
         height: 100px;
-        background-color: #212121;
     }
 
-        /*the mobile menu will be hidden for destop screen sizes*/
-        header #mobile_nav {
-            display: none;
-        }
+     /*the mobile menu will be hidden for destop screen sizes*/
+     header #mobile_nav {
+      display: none;
+     }
 
-        /*the header image will be position in the left of the header with 50px width and height*/
-        header img {
-            position: absolute;
-            top: 15px;
-            left: 20px;
-            width: 70px;
-            height: 70px;
-        }
+     /*the header image will be position in the left of the header with 50px width and height*/
+     header img {
+      top: 15px;
+      left: 20px;
+      width: 70px;
+      height: 70px;
+     }
 
-        /* in desktop screen sizes the menu navigation will be displayed as flex in row direction
-        with a menu distance from each other of 20px, 
-        a margin right of 20px, same as the logo margin-left
-        and a margin top of 40px that position it in the center of header of 100px size.
-
+     /* in desktop screen sizes the menu navigation will be displayed as flex in row direction
+       with a menu distance from each other of 20px, 
+       a margin right of 20px, same as the logo margin-left
+       and a margin top of 40px that position it in the center of header of 100px size.
     */
-        header #desktop_menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            column-gap: 20px;
-            margin-top: 40px;
-            margin-right: 20px;
-        }
+     header #desktop_menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      column-gap: 20px;
+      margin-top: 40px;
+      margin-right: 20px;
+     }
 
-            /* the a links of desktop screen sizes style
+    /* the a links of desktop screen sizes style
         no decoration of the default a links style
         white color and font size bold and 20px.
-    */
-            header #desktop_menu a {
-                list-style: none;
-                text-decoration: none;
-                color: white;
-                font-size: 20px;
-                font-weight: bold;
-            }
+     */
+     header #desktop_menu a {
+      list-style: none;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+     }
+}       
+
+                   
+                   
