@@ -1,1 +1,179 @@
 ﻿
+body, html {
+    margin: 0;
+    font-family: 'JelleeBold';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+}
+
+main{
+    position:absolute;
+    padding-top:70px;
+}
+
+#presentation {
+    height: 100vh;
+}
+
+ #description h2 {
+   color: #00ffff;
+    }
+
+#description p {
+    font-style: italic;
+}
+
+#arrow {
+    position:absolute;
+    bottom: 150px;
+    width: 50px;
+    height: 50px;
+    animation: pulse-black 2s infinite;
+}
+
+/* css design for small screen sizes from 0 to 768px*/
+@media all and (min-width:0px) and (max-width: 768px) {
+
+    /* hide the image for small screen sizes*/
+    #presentation_img {
+        display: none;
+    }
+
+    /* position content in the center of the screen ocupying 90% of width*/
+    #presentation_content {
+        margin: auto;
+        width: 90%;
+    }
+
+    #description h2 {
+        margin-top: 30px;
+    }
+
+    #description p {
+        letter-spacing: 4px;
+        line-height: 40px;
+    }
+}
+     /* css the different presentation design for mobile screen sizes from 0 to 320px*/
+   @media all and (min-width:0px) and (max-width: 320px) {
+    #presentation {
+        margin-top: 10px;
+    }
+
+    /*will only change the font of the text displayed*/
+
+    #description h1 {
+        font-size: 1.5em;
+    }
+
+    #description h2 {
+        font-size: 1.2em;
+    }
+
+    #description p {
+        font-size: 1em;
+    }
+   }
+
+    /* css the different presentation design for mobile screen sizes from 321 to 480px*/
+   @media all and (min-width:321px) and (max-width: 480px) {
+    #presentation {
+        margin-top: 20px;
+    }
+
+    /*will only change the font of the text displayed*/
+    #description h1 {
+        font-size: 1.6em;
+    }
+
+    #description h2 {
+        font-size: 1.3em;
+    }
+
+    #description p {
+        font-size: 1.1em;
+    }
+   }
+
+/* css the different presentation design for small screen sizes from 481-568px &
+          for tablets 569-768px */
+   @media all and (min-width:481px) and (max-width: 768px) {
+    #presentation {
+        margin-top: 40px;
+    }
+
+    /*will only change the font of the text displayed*/
+    #description h1 {
+        font-size: 1.7em;
+    }
+
+    #description h2 {
+        font-size: 1.4em;
+    }
+
+    #description p {
+        font-size: 1.2em;
+    }
+    
+   }
+
+/* css presentation design for desktops */
+@media all and (min-width:769px) {
+
+    #presentation {
+        margin-top: 60px;
+    }
+
+    #presentation_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #description {
+        width: 50%;
+    }
+
+    #presentation_img {
+        margin: auto 0;
+        width: 35%;
+        height: 35%;
+    }
+
+    #description h1 {
+        font-size: 1.3em;
+    }
+
+    #description h2 {
+        font-size: 1.2em;
+    }
+
+    #description p {
+        font-size: 1em;
+        letter-spacing: 5px;
+        line-height: 160%;
+    }
+}
+
+    @media all and (min-width:1201px) {
+
+        #description p {
+            letter-spacing: 5px;
+            line-height: 200%;
+        }
+
+      #presentation_img {
+         margin: auto 0;
+        width: 30%;
+        height: 30%;
+      }
+
+      #arrow {
+        border-width: 0px 18px 18px 0px;
+        padding: 20px;
+       }
+    }
+
