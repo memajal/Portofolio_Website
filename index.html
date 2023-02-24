@@ -18,9 +18,12 @@
     <!-- add css files that have the specific style for specific parts of the website-->
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="stylesheet" href="css/about_me.css" />
 
     <!-- add the font that I will use in my page Jellee font-->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/jellee-typeface" type="text/css" />
+    <!-- add the icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -91,7 +94,82 @@
             <img id="arrow" src="img/arrow.png" alt="Arrow that moves to the next section of the website" />
         </div>
 
-    </main>
+
+        
+        <div id="about_me">
+            <h1> About Me ...</h1>
+            <!-- the div part of about me photo and buttons for Edu,Job Skills, Others-->
+            <div id="about_me_content">
+
+                <!-- div about me only for desktops sizes contains my cv photo + download cv button-->
+                <div id="about_me_photo">
+                    <img id="cv_img" src="img/cv.png">
+                    <button class="btn"><i class="fa fa-download"><a href="cv.pdf"> </i> Download my CV</a></button>
+                </div>
+
+                <!-- div about me description has all the buttons and the related information for Education, Job Skills, Other Skills
+                    that will be displayed only when the user click every button-->
+                <div id="about_me_description">
+                    <button class="tablinks">Education</button>
+                    <div class="content">
+                        <p>
+                            Bachelor in Bussines Informatics
+                            <br />
+                            <span>University of Tirana, Albania </span>
+                            <br />
+                            <br />
+                            Master of Sience in Information Systems in Economy
+                            <br />
+                            <span>University of Tirana, Albania </span>
+                        </p>
+                    </div>
+
+                    <button class="tablinks">Job Related Skills</button>
+                    <div class="content">
+                        <p>
+                            Able to complete the projected to scheduled time and deal with stress.
+                            <br /><br />
+                            Ability to design and build simple websites.
+                            <br /><br />
+                            Knowledge in <span>HTML, CSS, JavaScript, PHP, MYSQL.</span>
+                            <br /><br />
+                            Knowledge of WordPress
+                        </p>
+                    </div>
+
+
+                    <button class="tablinks">Other Skills</button>
+                    <div class="content">
+                        <p>
+                            Ethical and polite when talking to others
+                            <br /><br />
+                            Highly dedicated when working
+                            <br /><br />
+                            Good communication skills with colleagues and superiors
+                            <br /><br />
+                            Able to work individually and in groups
+                            <br /><br />
+                            Very proficient in using the computer to complete a wide range of tasks
+                            <br /><br />
+                            Passionate about and dedicated to my job
+                            <br /><br />
+                            Hard worker
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <!-- download cv button that will be displayed for mobile screen sizes 
+                    at the end of the tablinks and will be hidden for desktop screen sizes-->
+                <button class="btn" id="button_mobile"><i class="fa fa-download"><a href="cv.pdf"> </i> Download my CV</a></button>
+
+            </div>
+               <!-- the arrow closing the about me section-->
+                <img id="arrow" src="img/arrow.png" alt="Arrow that moves to the next section of the website" />
+            </div>
+
+</main>
 
 
 </body>

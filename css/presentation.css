@@ -14,7 +14,7 @@ main{
     padding-top:70px;
 }
 
-#presentation {
+#presentation, #about_me {
     height: 100vh;
 }
 
@@ -28,7 +28,6 @@ main{
 
 #arrow {
     position:absolute;
-    bottom: 150px;
     width: 50px;
     height: 50px;
     animation: pulse-black 2s infinite;
@@ -64,8 +63,8 @@ main{
     }
 
     /*will only change the font of the text displayed*/
-
-    #description h1 {
+    /*h1 text in all the document*/
+    h1 {
         font-size: 1.5em;
     }
 
@@ -73,7 +72,7 @@ main{
         font-size: 1.2em;
     }
 
-    #description p {
+    p {
         font-size: 1em;
     }
    }
@@ -85,7 +84,7 @@ main{
     }
 
     /*will only change the font of the text displayed*/
-    #description h1 {
+    h1 {
         font-size: 1.6em;
     }
 
@@ -93,7 +92,7 @@ main{
         font-size: 1.3em;
     }
 
-    #description p {
+    p {
         font-size: 1.1em;
     }
    }
@@ -106,7 +105,7 @@ main{
     }
 
     /*will only change the font of the text displayed*/
-    #description h1 {
+    h1 {
         font-size: 1.7em;
     }
 
@@ -114,8 +113,12 @@ main{
         font-size: 1.4em;
     }
 
-    #description p {
+    p {
         font-size: 1.2em;
+    }
+
+    #arrow {
+        margin-top: 50px;
     }
     
    }
@@ -143,7 +146,7 @@ main{
         height: 35%;
     }
 
-    #description h1 {
+    h1 {
         font-size: 1.3em;
     }
 
@@ -156,17 +159,30 @@ main{
         letter-spacing: 5px;
         line-height: 160%;
     }
+
+    #arrow{
+        margin-top: 100px;
+    }
 }
 
     @media all and (min-width:1201px) {
 
+        h1 {
+            font-size: 1.5em;
+        }
+
+        #description h2 {
+            font-size: 1.4em;
+        }
+
         #description p {
+            font-size: 1.2em;
             letter-spacing: 5px;
             line-height: 200%;
         }
 
       #presentation_img {
-         margin: auto 0;
+        margin: auto 0;
         width: 30%;
         height: 30%;
       }

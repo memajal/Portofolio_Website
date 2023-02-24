@@ -1,0 +1,114 @@
+
+/*about me buttons design*/
+.tablinks {
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #212121;
+    color: #00ffff;
+    font-family: 'JelleeBold';
+    font-size: 1em;
+    transition: 0.4s;
+}
+
+/*about me content margin*/
+.content {
+    padding: 5px 18px;
+    display:none;
+}
+
+    /*about me content span design*/
+.content span {
+     color: #00ffff;
+     font-style:italic;
+}
+
+/* button hover and focus design*/
+#about_me button:hover, button:focus,
+#about_me a:hover, a:focus{
+    background-color: #00ffff;
+    color: black;
+}
+
+/* dowload CV button design*/
+#about_me .btn {
+    margin: 30px auto;
+    width: 140px; 
+    height: 40px;
+    border-color: aqua;
+    background-color: black;
+}
+
+#about_me .fa-download {
+      color: white;
+    }
+
+.fa-download:hover, .fa-download:focus {
+      color: black;
+}
+
+#about_me a {
+    text-decoration: none;
+    color:white;
+}
+
+/* about me design for small screen sizes from 0 to 768px*/
+@media all and (min-width:0px) and (max-width: 768px) {
+    /*hide photo in small screen sizes*/
+    #about_me_photo {
+        display: none;
+    }
+
+    /* position content in the center of the screen ocupying 90% of width*/
+    #about_me_description {
+        margin: auto;
+        width: 90%;
+    }
+
+    .tablinks{
+        width:90%;
+    }
+
+}
+
+/* css about me design for desktops */
+@media all and (min-width:769px) {
+
+    #button_mobile {
+        display: none;
+    }
+
+    #about_me h1 {
+        margin-bottom: 30px;
+    }
+
+    /*display content as flex row diveded in 35% and 50%*/
+    #about_me_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #about_me_description {
+        width: 50%;
+    }
+
+    /*display content of about_me_photo as column */
+    #about_me_photo {
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+        width: 35%;
+    }
+
+}
+
+/* css about me design for desktop larg screen sizes more than 1200px */
+@media all and (min-width:1201px) {
+
+    #about_me_photo {
+        width: 30%;
+    }
+
+}
