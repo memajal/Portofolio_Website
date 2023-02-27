@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/presentation.css" />
     <link rel="stylesheet" href="css/about_me.css" />
     <link rel="stylesheet" href="css/portofolio.css" />
+    <link rel="stylesheet" href="css/contact_me.css" />
 
 
     <!-- add the font that I will use in my page Jellee font-->
@@ -110,7 +111,7 @@
                 </div>
 
                 <!-- div about me description has all the buttons and the related information for Education, Job Skills, Other Skills
-                that will be displayed only when the user click every button-->
+            that will be displayed only when the user click every button-->
                 <div id="about_me_description">
                     <button class="tablinks">Education</button>
                     <div class="content">
@@ -163,7 +164,7 @@
                 </div>
 
                 <!-- download cv button that will be displayed for mobile screen sizes
-                at the end of the tablinks and will be hidden for desktop screen sizes-->
+            at the end of the tablinks and will be hidden for desktop screen sizes-->
                 <button class="btn" id="button_mobile"><i class="fa fa-download"><a href="cv.pdf"> </i> Download my CV</a></button>
 
             </div>
@@ -215,14 +216,61 @@
                     </a>
                     <span>A Blog Website </span>
                 </div>
-
-
-
             </div>
 
             <!-- arrow image to move to the next section-->
             <img id="arrow" src="img/arrow.png" alt="Arrow that moves to the next section of the website" />
         </div>
+
+        <div id="contact_me">
+            <h1> Contact Me</h1>
+            <h3>If you like me projects, contact me in my email, phone number or in the contact form below</h3>
+            <div id="contact_me_content">
+
+                <div id="contact_information">
+                    <p>
+                        Alketa Memaj
+                    </p>
+
+                    <p>
+                        <i class="fa-sharp fa-solid fa-location-pin"></i>
+                        Vierbergen 45,
+                        22111 Hamburg
+                    </p>
+
+                    <p>
+                        <i class="fa-sharp fa-solid fa-envelope"></i>
+                        amemaj92@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                        +4915732880771
+                    </p>
+                </div>
+
+                <form id="contact_me_form">
+                    <label id="co_name_label">Company Name</label>
+
+                    <input type="text" id="co_name" name="co_name" placeholder="Company Name..." />
+
+
+
+                    <label id="email_label">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Contact Email..." />
+
+                    <label id="subject_label">Subject</label>
+
+
+                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                    <input id="submit" type="submit" value="Submit" />
+
+                </form>
+
+
+            </div>  
+        </div>
+
     </main>
 
 

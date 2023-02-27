@@ -1,6 +1,5 @@
 ﻿
-body, html {
-    margin: 0;
+body {
     font-family: 'JelleeBold';
     font-weight: normal;
     font-style: normal;
@@ -12,6 +11,7 @@ body, html {
 main{
     position:absolute;
     padding-top:70px;
+    padding-bottom:70px;
 }
 
 #presentation, #about_me {

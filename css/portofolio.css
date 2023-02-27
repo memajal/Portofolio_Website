@@ -3,14 +3,17 @@
     the My_project box set in the 
     middle of the screen with 20px row gap*/
 #my_projects_content {
+    position:relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 20px;
-    margin-bottom:20px;
 }
 
+#my_projects #arrow{
+    margin-bottom:20px;
+}
 /* every my_project_box display as flex with 90% of screen size*/
 .my_project_box {
     display: flex;
