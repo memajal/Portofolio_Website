@@ -3,7 +3,8 @@
 
 /* the header will be on the top of the screen with black bcg color*/
 header {
-    position: absolute;
+    position: fixed;
+    z-index:2;
     top: 0;
     left: 0;
     width: 100%;
@@ -92,8 +93,7 @@ header img {
         white color and font size bold and 20px.
      */
      header #desktop_menu a {
-      list-style: none;
-      text-decoration: none;
+      text-decoration:none;
       color: white;
       font-size: 20px;
       font-weight: bold;
