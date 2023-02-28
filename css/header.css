@@ -39,6 +39,7 @@ header img {
 
     /* toogle menu will be positioned in the right of the mobile screen sizes*/
     header #mobile_nav {
+     cursor:pointer;
      display: block;
      position: absolute;
      right: 10px;
@@ -52,6 +53,7 @@ header img {
      background-color: #00ffff;
      margin: 6px 0;
     }
+
 }
 
 /* the header design for desktop screen from 769px, */

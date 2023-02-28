@@ -17,10 +17,12 @@
 
     <!-- add css files that have the specific style for specific parts of the website-->
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/header_mobile.css" />
     <link rel="stylesheet" href="css/presentation.css" />
     <link rel="stylesheet" href="css/about_me.css" />
     <link rel="stylesheet" href="css/portofolio.css" />
     <link rel="stylesheet" href="css/contact_me.css" />
+
 
 
     <!-- add the font that I will use in my page Jellee font-->
@@ -56,7 +58,7 @@
         <!-- Toogle Menu will have the bars that will open the mobile nav when the user click-->
         <!-- Toogle Menu designed for mobile-->
         <!-- Toogle Menu designed for mobile-->
-        <div id="mobile_nav">
+        <div id="mobile_nav" onclick="openNav()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -83,9 +85,9 @@
         </nav>
     </header>
 
-    <!-- the main part of the website will have: 
-        1. the div presentation part 
-        2. 
+    <!-- the main part of the website will have:
+        1. the div presentation part
+        2.
     ...-->
     <main>
 
@@ -125,7 +127,7 @@
                 </div>
 
                 <!-- div about me description has all the buttons and the related information for Education, Job Skills, Other Skills
-        that will be displayed only when the user click every button-->
+                that will be displayed only when the user click every button-->
                 <div id="about_me_description">
                     <button class="tablinks">Education</button>
                     <div class="content">
@@ -178,7 +180,7 @@
                 </div>
 
                 <!-- download cv button that will be displayed for mobile screen sizes
-        at the end of the tablinks and will be hidden for desktop screen sizes-->
+                at the end of the tablinks and will be hidden for desktop screen sizes-->
                 <button class="btn" id="button_mobile"><i class="fa fa-download"><a href="cv.pdf"> </i> Download my CV</a></button>
 
             </div>
@@ -282,11 +284,17 @@
                 </form>
 
 
-            </div>  
+            </div>
         </div>
 
     </main>
 
-    <script src="js/navbar.js"></script>
+    <script>
+       // when the user clickes the mobile nav, it takes the class open added to css
+        function openNav() {
+            document.getElementById("mobile_nav").classList.toggle("open");
+        }
+     </script>
+     <script src="js/navbar.js"></script>
 </body>
 </html>
