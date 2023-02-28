@@ -28,3 +28,32 @@ navbar_mobile.addEventListener("click", function () {
         }
     }
 });
+
+
+/* javascript code to change the menu color when the user click the arrows */
+
+var arrow_array = document.getElementsByClassName("arrow"); // get all arrows
+
+document.addEventListener("click", function () {
+    var buttonClicked = event.target;
+    if (buttonClicked.className == "arrow") { /* If one of arrows is clicked then set the specific nav 
+        from desktop and mobile class to active. Set also Home class to default. 
+        Else if it is not clicked set the class to default*/
+
+        for (var i = 0; i < arrow_array.length; i++) {
+            if (arrow_array[i] == buttonClicked) {
+                buttonsArray[i + 1].className = "active";
+                buttonsArray_mobile[i + 1].className = "active";
+
+                buttonsArray[0].className = "default";
+                buttonsArray_mobile[0].className = "default";
+            }
+            else {
+                buttonsArray[i + 1].className = "default";
+                buttonsArray_mobile[i + 1].className = "default";
+            }
+
+        }
+
+    }
+});
