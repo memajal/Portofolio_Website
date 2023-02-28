@@ -1,4 +1,11 @@
 ﻿
+/* set about me size as all screen and add a padding top
+because of the header menu displayed on top*/
+
+#my_projects {
+    padding-top: 130px;
+}
+
 /* my_project display as a flex direction with
     the My_project box set in the 
     middle of the screen with 20px row gap*/
@@ -39,6 +46,7 @@
         padding-bottom: 10px;
 }
 
+/**/
 
 
 @media all and (min-width:0px) and (max-width: 320px) {

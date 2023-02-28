@@ -1,4 +1,11 @@
 
+/* set about me size as all screen and add a padding top 
+    because of the header menu displayed on top*/
+#about_me{
+    padding-top: 130px;
+    height:100vh;
+}
+
 #about_me h1 {
     margin-bottom: 30px;
 }
