@@ -10,26 +10,33 @@ body {
 
 main{
     position:absolute;
+    overflow:hidden;
     padding-top:70px;
     padding-bottom:70px;
+    width:97%;
 }
 
-#presentation, #about_me {
-    height: 100vh;
+ h1, h2, p{
+    width:90%;
+    margin:auto;
 }
 
- #description h2 {
+ h2 {
    color: #00ffff;
     }
 
-#description p {
+ p {
     font-style: italic;
 }
 
+#description h1, h2, p {
+    margin-top: 30px;
+}
+
 .arrow {
-    width: 50px;
-    height: 50px;
-    margin:auto;
+    margin: auto;
+    padding-top:40px;
+    padding-bottom:40px;
     animation: pulse-black 2s infinite;
 }
 
@@ -46,16 +53,9 @@ main{
         margin: auto;
         width: 90%;
     }
+        
 
-    #description h2 {
-        margin-top: 30px;
-    }
-
-    #description p {
-        letter-spacing: 4px;
-        line-height: 40px;
-    }
-
+    /*arrow design for small screen sizes*/
     .arrow{
         width:30px;
         height:30px;
@@ -64,23 +64,32 @@ main{
 }
      /* css the different presentation design for mobile screen sizes from 0 to 320px*/
    @media all and (min-width:0px) and (max-width: 320px) {
+
     #presentation {
         margin-top: 10px;
     }
 
     /*will only change the font of the text displayed*/
     /*h1 text in all the document*/
+
     h1 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
-    #description h2 {
-        font-size: 1.2em;
+    h2 {
+        font-size: 1.1em;
+    }
+
+    #description p {
+        line-height: 30px;
+        letter-spacing: 3px;
     }
 
     p {
         font-size: 1em;
     }
+
+
    }
 
     /* css the different presentation design for mobile screen sizes from 321 to 480px*/
@@ -91,11 +100,16 @@ main{
 
     /*will only change the font of the text displayed*/
     h1 {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
-    #description h2 {
+    h2 {
         font-size: 1.3em;
+    }
+
+    #description p {
+        line-height: 30px;
+        letter-spacing: 4px;
     }
 
     p {
@@ -107,24 +121,31 @@ main{
           for tablets 569-768px */
    @media all and (min-width:481px) and (max-width: 768px) {
     #presentation {
+        width:80%;
         margin-top: 40px;
+        margin:auto;
     }
 
     /*will only change the font of the text displayed*/
     h1 {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 
-    #description h2 {
+    h2 {
         font-size: 1.4em;
+    }
+
+    #description p {
+        line-height: 40px;
+        letter-spacing: 4px;
     }
 
     p {
         font-size: 1.2em;
     }
 
-    #arrow {
-        margin-top: 50px;
+    .arrow {
+        margin-top: 40px;
     }
     
    }
@@ -140,6 +161,7 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-content:center;
     }
 
     #description {
@@ -147,26 +169,31 @@ main{
     }
 
     #presentation_img {
-        margin: auto 0;
-        width: 35%;
-        height: 35%;
+        margin: auto 0px;
+        border: 5px solid white;
+        width:35%;
     }
 
     h1 {
         font-size: 1.3em;
     }
 
-    #description h2 {
+    h2 {
         font-size: 1.2em;
     }
 
-    #description p {
+    p {
         font-size: 1em;
-        letter-spacing: 5px;
-        line-height: 160%;
     }
 
-    #arrow{
+    #description p {
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
         margin-top: 100px;
     }
 }
@@ -177,25 +204,28 @@ main{
             font-size: 1.5em;
         }
 
-        #description h2 {
+        h2 {
             font-size: 1.4em;
         }
 
-        #description p {
+        p {
             font-size: 1.2em;
-            letter-spacing: 5px;
-            line-height: 200%;
+        }
+
+        #description p {
+            letter-spacing: 4px;
+            line-height: 40px;
         }
 
       #presentation_img {
-        margin: auto 0;
+        margin: auto 0px;
         width: 30%;
         height: 30%;
       }
 
-      #arrow {
-        border-width: 0px 18px 18px 0px;
-        padding: 20px;
-       }
+        .arrow {
+            width: 50px;
+            height: 50px;
+        }
     }
 

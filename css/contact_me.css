@@ -1,10 +1,10 @@
 ﻿
 #contact_me{
     position:relative;
-    margin-top:20%;
 }
 
-#contact_me h3 {
+#contact_me h4 {
+    margin:10px auto;
     color: #00ffff;
     font-style: italic;
 }
@@ -47,10 +47,9 @@ input[type=submit] {
 /* css design for small screen sizes from 0 to 768px*/
 @media all and (min-width:0px) and (max-width: 768px) {
 
-    #contact_me h3{
-        width:93%;
-        margin:auto;
-    }
+    #contact_me h4{
+        width:90%;
+        }
 
     /* display the contents in column for small screen sizes*/
     #contact_me_content {
@@ -66,12 +65,13 @@ input[type=submit] {
 
     /*divide the 2 divs with a border */
     #contact_information{
+        padding-bottom:10px;
         border-bottom:2px solid aqua;
     }
 
     /* let a padding between the form and the contact info*/
     #contact_me_form{
-        padding-top:10px;
+        padding-top:30px;
     }
 
     #contact_me textarea {
@@ -80,20 +80,20 @@ input[type=submit] {
 }
 
 /* for screen sizes 569-768px the images occupy 70% of screen sizes*/
-@media all and (min-width:569px) and (max-width: 768px) {
+@media all and (min-width:481px) and (max-width: 768px) {
 
-    #contact_me h3, #contact_me_form, #contact_information {
-        width: 70%;
+    #contact_me {
+        width: 80%;
+        margin:auto;
     }
 }
 
 /*the style for screen sizes from 769 px*/
 @media all and (min-width:769px) {
 
-    h3 {
+    h4 {
         width: 85%;
         margin:auto;
-        margin-bottom: 50px;
     }
 
     /*display the 2 divs as 2 rows */

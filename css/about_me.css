@@ -1,7 +1,11 @@
 
+#about_me h1 {
+    margin-bottom: 30px;
+}
+
 /*about me buttons design*/
 .tablinks {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     cursor: pointer;
     padding: 10px;
     border: 2px solid white;
@@ -62,7 +66,7 @@
 
     /* position content in the center of the screen ocupying 90% of width*/
     #about_me_description {
-        margin: auto;
+        margin: 30px auto;
         width: 90%;
     }
 
@@ -71,17 +75,17 @@
     }
 
 }
+   @media all and (min-width:481px) and (max-width: 768px) {
+    #about_me_description {
+        width: 80%;
+    }
+   }
 
 /* css about me design for desktops */
-@media all and (min-width:769px) {
-
-    #button_mobile {
-        display: none;
-    }
-
-    #about_me h1 {
-        margin-bottom: 30px;
-    }
+ @media all and (min-width:769px) {
+        #button_mobile {
+            display: none;
+        }
 
     /*display content as flex row diveded in 35% and 50%*/
     #about_me_content {
@@ -100,6 +104,10 @@
         flex-direction: column;
         margin: auto 0;
         width: 35%;
+    }
+
+    #about_me_photo img{
+        border: 5px solid aqua;
     }
 
 }

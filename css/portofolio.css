@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 20px;
+    margin: 30px auto;
 }
 
 #my_projects #arrow{
@@ -52,8 +53,8 @@
     
 }
 
-/* for screen sizes 481-568px the images occupy 80% of screen sizes*/
-@media all and (min-width:481px) and (max-width: 568px) {
+/* for screen sizes 481-768px the images occupy 80% of screen sizes*/
+@media all and (min-width:481px) and (max-width: 768px) {
     .my_project_box {
         width: 80%;
     }
@@ -67,7 +68,7 @@
 }
 
 /* for screen sizes 769-959px we display 2 images in a row*/
-@media all and (min-width:769px) and (max-width:959px) {
+@media all and (min-width:769px) and (max-width:960px) {
 
     .my_project_box {
         width: 45%;
