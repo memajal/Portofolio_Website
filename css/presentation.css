@@ -26,10 +26,10 @@ main{
     font-style: italic;
 }
 
-#arrow {
-    position:absolute;
+.arrow {
     width: 50px;
     height: 50px;
+    margin:auto;
     animation: pulse-black 2s infinite;
 }
 
@@ -54,6 +54,12 @@ main{
     #description p {
         letter-spacing: 4px;
         line-height: 40px;
+    }
+
+    .arrow{
+        width:30px;
+        height:30px;
+        margin: 0 auto;
     }
 }
      /* css the different presentation design for mobile screen sizes from 0 to 320px*/
