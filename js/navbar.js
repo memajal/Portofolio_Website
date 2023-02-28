@@ -13,3 +13,18 @@ navbar.addEventListener("click", function () {
         }
     }
 });
+
+/* mobile menu to change the color of menu when it is clicked 
+ The idea is the same with desktop menu, only that the event listener is added to mobile nav*/
+
+var navbar_mobile = document.getElementById("mobile-menu");
+var buttonsArray_mobile = navbar_mobile.getElementsByTagName("A");
+navbar_mobile.addEventListener("click", function () {
+    var buttonClicked = event.target;
+    if (buttonClicked.tagName == "A") {
+        for (var i = 0; i < buttonsArray_mobile.length; i++) {
+            if (buttonsArray_mobile[i] == buttonClicked) buttonsArray_mobile[i].className = "active";
+            else buttonsArray_mobile[i].className = "default";
+        }
+    }
+});
