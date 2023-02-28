@@ -27,6 +27,18 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/jellee-typeface" type="text/css" />
     <!-- add the icon library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /*class active will have the color of active menu*/
+        .active {
+            color: #00ffff;
+        }
+
+        /*class default will have the standart color of menues*/
+        .default {
+            color: white;
+        }
+    </style>
 </head>
 
 
@@ -43,17 +55,18 @@
 
         <!-- Toogle Menu will have the bars that will open the mobile nav when the user click-->
         <!-- Toogle Menu designed for mobile-->
-        <div id="mobile_nav" onclick="openNav()">
+        <!-- Toogle Menu designed for mobile-->
+        <div id="mobile_nav">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
 
             <!-- navigation Menu in the header section for mobile -->
             <nav id="mobile-menu">
-                <a href="index.html">Home</a>
-                <a href="#about_me">About Me </a>
-                <a href="#my_projects">Portofolio </a>
-                <a href="#contact_me">Contact Me </a>
+                <a href="index.html" class="active">Home</a>
+                <a href="#about_me" class="default">About Me</a>
+                <a href="#my_projects" class="default">Portofolio</a>
+                <a href="#contact_me" class="default">Contact Me</a>
             </nav>
 
         </div>
@@ -61,10 +74,10 @@
         <!-- navigation Menu in the header section for desktop -->
         <nav>
             <div id="desktop_menu">
-                <a href="index.html">Home</a>
-                <a href="#about_me">About Me </a>
-                <a href="#my_projects">Portofolio </a>
-                <a href="#contact_me">Contact Me </a>
+                <a href="index.html" class="active">Home</a>
+                <a href="#about_me" class="default">About Me</a>
+                <a href="#my_projects" class="default">Portofolio</a>
+                <a href="#contact_me" class="default">Contact Me</a>
 
             </div>
         </nav>
