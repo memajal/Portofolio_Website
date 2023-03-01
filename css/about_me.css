@@ -42,7 +42,7 @@
 }
 
 /* dowload CV button design*/
-#about_me #download_cv {
+#download_cv {
     position: relative;
     margin: 20px auto;
     width: 140px;
@@ -78,11 +78,20 @@
     cursor:pointer;
 }
 
+/* downloand and view my cv button hover style*/
+    #view_my_cv:hover, #download_cv:hover {
+        background-color: aqua;
+        color:black;
+    }
+#about_me a:hover, #about_me i:hover{
+      color:black;
+}
+
 
 /* about me design for small screen sizes from 0 to 768px*/
-@media all and (min-width:0px) and (max-width: 768px) {
-    /*hide photo in small screen sizes*/
-    #about_me_photo {
+ @media all and (min-width:0px) and (max-width: 768px) {
+        /*hide photo in small screen sizes*/
+        #about_me_photo {
         display: none;
     }
 
