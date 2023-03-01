@@ -125,28 +125,42 @@
         justify-content: space-around;
     }
 
-    #about_me_description {
-        width: 50%;
-    }
-
     /*display content of about_me_photo as column */
     #about_me_photo {
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         margin: auto 0;
         width: 35%;
     }
 
-    #about_me_photo img {
-        width: 100%;
-        border: 5px solid aqua;
+        #about_me_photo img {
+            width: 100%;
+            border: 5px solid aqua;
+        }
+
+    /*display the tablinks also as a column */
+    #about_me_description {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+        width: 50%;
     }
 
-    /*positioning view my cv when user hover*/
-    #view_my_cv {
-        bottom: 150px;
-    }
+        #about_me_description .tablinks{
+            width:80%;
+        }
+
+        #about_me_description .content {
+            width: 80%;
+        }
+
+        /*positioning view my cv when user hover*/
+        #view_my_cv {
+            bottom: 150px;
+        }
 
 }
 
@@ -160,5 +174,13 @@
     /*positioning view my cv when user hover*/
     #view_my_cv {
         bottom: 200px;
+    }
+
+    #about_me_description .tablinks {
+        width: 70%;
+    }
+
+    #about_me_description .content {
+        width: 70%;
     }
 }
