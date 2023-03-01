@@ -126,7 +126,7 @@
                         <img id="cv_img" src="img/cv.png">
                         <button id="view_my_cv" onclick="window.open('cv.pdf','_blank')"> View my CV </button>
                     </div>
-                    <button class="btn"><i class="fa fa-download"></i> <a href="cv.pdf"> Download my CV</a></button>
+                    <button id="download_cv" download="cv.pdf"><i class="fa fa-download"></i> Download my CV</button>
                 </div>
 
                 <!-- div about me description has all the buttons and the related information for Education, Job Skills, Other Skills
@@ -293,11 +293,12 @@
     </main>
 
     <script>
-       // when the user clickes the mobile nav, it takes the class open added to css
+        // when the user clickes the mobile nav, it takes the class open added to css
         function openNav() {
             document.getElementById("mobile_nav").classList.toggle("open");
         }
-     </script>
-     <script src="js/navbar.js"></script>
+    </script>
+    <script src="js/navbar.js"></script>
+    <script src="js/about_me.js"></script>
 </body>
 </html>

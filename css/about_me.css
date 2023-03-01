@@ -43,7 +43,8 @@
 
 /* dowload CV button design*/
 #about_me .btn {
-    margin: 30px auto;
+    position:relative;
+    margin: 20px auto;
     width: 140px; 
     height: 40px;
     border-color: aqua;
@@ -66,16 +67,13 @@
 /*view my cv button style, position in the middle of the image*/
 #view_my_cv {
     position:relative;
+    margin:auto;
     width: 100px;
     height: 30px;
     border-color: aqua;
     background-color: black;
     color:white;
-}
-
-/*on image hover display the button view my cv and make the image transparent*/
-#cv_img:hover{
- opacity: 0.2;
+    cursor:pointer;
 }
 
 
@@ -124,17 +122,19 @@
     #about_me_photo {
         display: flex;
         flex-direction: column;
+        justify-content:center;
         margin: auto 0;
         width: 35%;
-    }
-
-    #about_me_photo_content {
-        
     }
 
     #about_me_photo img {
         width: 100%;
         border: 5px solid aqua;
+    }
+
+    /*positioning view my cv when user hover*/
+    #view_my_cv {
+        bottom: 150px;
     }
 
 }
@@ -145,5 +145,9 @@
     #about_me_photo {
         width: 30%;
     }
-
+    
+    /*positioning view my cv when user hover*/
+    #view_my_cv {
+        bottom: 200px;
+    }
 }
