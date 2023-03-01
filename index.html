@@ -122,8 +122,11 @@
 
                 <!-- div about me only for desktops sizes contains my cv photo + download cv button-->
                 <div id="about_me_photo">
-                    <img id="cv_img" src="img/cv.png">
-                    <button class="btn"><i class="fa fa-download"><a href="cv.pdf"> </i> Download my CV</a></button>
+                    <div id="about_me_photo_content">
+                        <img id="cv_img" src="img/cv.png">
+                        <button id="view_my_cv" onclick="window.open('cv.pdf','_blank')"> View my CV </button>
+                    </div>
+                    <button class="btn"><i class="fa fa-download"></i> <a href="cv.pdf"> Download my CV</a></button>
                 </div>
 
                 <!-- div about me description has all the buttons and the related information for Education, Job Skills, Other Skills

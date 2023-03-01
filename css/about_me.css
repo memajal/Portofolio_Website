@@ -35,9 +35,8 @@
      font-style:italic;
 }
 
-/* button hover and focus design*/
-#about_me button:hover, button:focus,
-#about_me a:hover, a:focus{
+/* button tablinks hover and focus design*/
+.tablinks:hover, .tablinks:focus{
     background-color: #00ffff;
     color: black;
 }
@@ -63,6 +62,22 @@
     text-decoration: none;
     color:white;
 }
+
+/*view my cv button style, position in the middle of the image*/
+#view_my_cv {
+    position:relative;
+    width: 100px;
+    height: 30px;
+    border-color: aqua;
+    background-color: black;
+    color:white;
+}
+
+/*on image hover display the button view my cv and make the image transparent*/
+#cv_img:hover{
+ opacity: 0.2;
+}
+
 
 /* about me design for small screen sizes from 0 to 768px*/
 @media all and (min-width:0px) and (max-width: 768px) {
@@ -113,7 +128,12 @@
         width: 35%;
     }
 
-    #about_me_photo img{
+    #about_me_photo_content {
+        
+    }
+
+    #about_me_photo img {
+        width: 100%;
         border: 5px solid aqua;
     }
 
