@@ -38,7 +38,7 @@ header a {
  /* main position and width over the header fixed*/
 main {
     position: absolute;
-    margin-top:100px;
+    margin-top: 70px;
     width: 97%;
     height: 100%;
 }
@@ -47,7 +47,6 @@ main {
 #blog_description {
     width: 90%;
     margin: 0px auto;
-    
 }
 
 /* the text will be of justify porperty*/
@@ -58,6 +57,18 @@ main {
 #blog_description h2, .blog_description_parts em {
     color: #00ffff;
 }
+
+/* add a padding at the end of the page*/
+.blog_links {
+    padding-bottom: 50px;
+}
+
+    .blog_links a {
+        color: #00ffff;
+        font-size: 15px;
+        text-decoration: underline;
+        font-style: italic;
+    }
 
 
 @media all and (min-width:0px) and (max-width: 768px) {
