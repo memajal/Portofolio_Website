@@ -97,36 +97,56 @@ main {
     }
     
     /*hide image on mobile screen sizes*/
-    .myImg{
-        display:none;
+    .myImg, .image_mobile {
+        display: none;
     }
 
     hr {
         background-color: #00ffff;
         height:2px;
     }
+
 }
 
+@media all and (min-width:569px) and (max-width: 769px) {
 
-@media all and (min-width:769px) {
-    /* header height 100px for desktop*/
-    header {
-        height: 100px;
+    #blog_description {
+        width: 80%;
     }
 
-    /*the header image will be position in the left of the header with 50px width and height*/
-    header img {
-      top: 15px;
-      left: 20px;
-      width: 70px;
-      height: 70px;
+    /* show only the image for tablet screen sizes*/
+    .image_mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2%;
     }
 
-    /* header a top and right and font size for desktop screen sizes*/ 
-    header a {
-     font-size: 20px;
-     top: 40px;
-     right: 50px;
-    }
+        .image_mobile img {
+            width: 35%;
+        }
+
 }
+
+    @media all and (min-width:769px) {
+        /* header height 100px for desktop*/
+        header {
+            height: 100px;
+        }
+
+            /*the header image will be position in the left of the header with 50px width and height*/
+            header img {
+                top: 15px;
+                left: 20px;
+                width: 70px;
+                height: 70px;
+            }
+
+            /* header a top and right and font size for desktop screen sizes*/
+            header a {
+                font-size: 20px;
+                top: 40px;
+                right: 50px;
+            }
+    }
 
