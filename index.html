@@ -30,6 +30,7 @@
     <!-- add the icon library-->
     <script src="https://kit.fontawesome.com/b2064e6a7e.js" crossorigin="anonymous"></script>
 
+    <!-- include SMTP Javascript library to send Emails-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <style>
@@ -271,35 +272,48 @@
                 </div>
 
                 <form id="contact_me_form" method="post">
-                    <label id="co_name_label">Company Name</label>
-
-                    <input type="text" id="co_name" name="co_name" placeholder="Company Name..."  required />
-
-
 
                     <label id="email_label">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Contact Email..."  required />
-
-                    <label id="subject_label">Subject</label>
+                    <input type="text" id="email" name="email" placeholder="Contact Email..." required />
 
 
+                    <label id="co_name_label">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject..." required />
+
+                    <label id="subject_label">Message</label>
                     <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
-                    <input id="submit" type="submit" value="Submit" onclick="sendMail()"/>
+
+                    <input id="submit" type="submit" value="Send Email" onclick="sendEmail()" />
 
                 </form>
-
 
             </div>
         </div>
 
     </main>
 
+    
+
     <script>
         // when the user clickes the mobile nav, it takes the class open added to css
         function openNav() {
             document.getElementById("mobile_nav").classList.toggle("open");
         }
-            
+
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "amemaj92@gmail.com",
+                Password: "mikimouse123",
+                To: 'amemaj92@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: document.getElementById("subject").value,
+                Body: document.getElementById("subject").value,
+            }).then(
+                message => alert("mail sent successfully")
+            );
+        }
+           
           
         
     </script>
