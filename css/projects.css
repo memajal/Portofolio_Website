@@ -1,2 +1,82 @@
 ﻿
+/* body elements of every my project page*/
+body {
+    font-family: 'JelleeBold';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+}
+
+/* header position fixed*/
+header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212121;
+}
+
+header img {
+    position: absolute;
+ }
+
+/* header a position and color*/
+header a {
+ position:absolute;
+ color: inherit;
+ text-decoration: inherit;
+ }
+
+/* header a when the user hover*/
+ header a:hover {
+   color: #00ffff;
+  }
+
+@media all and (min-width:0px) and (max-width: 768px) {
+    /* header height 70px for mobile*/
+    header {
+        height: 70px; /*header height 70px for mobile*/
+    }
+
+   /*the header image will be position in the left of the header with 50px width and height*/
+    header img  {
+     top: 10px;
+     left: 10px;
+     width: 50px;
+     height: 50px;
+    }
+
+   /* header a top and right and font size for mobile screen sizes*/ 
+    header a {
+     font-size: 15px;
+     top: 25px;
+     right: 25px;
+     }
+}
+
+
+@media all and (min-width:769px) {
+    /* header height 100px for desktop*/
+    header {
+        height: 100px;
+    }
+
+    /*the header image will be position in the left of the header with 50px width and height*/
+    header img {
+      top: 15px;
+      left: 20px;
+      width: 70px;
+      height: 70px;
+    }
+
+    /* header a top and right and font size for desktop screen sizes*/ 
+    header a {
+     font-size: 20px;
+     top: 40px;
+     right: 50px;
+    }
+}
 
