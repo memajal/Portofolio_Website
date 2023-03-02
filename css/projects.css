@@ -6,7 +6,7 @@ body {
     font-style: normal;
     background-color: #262626;
     color: white;
-    text-align: center;
+    text-align:center;
 }
 
 /* header position fixed*/
@@ -35,6 +35,31 @@ header a {
    color: #00ffff;
   }
 
+ /* main position and width over the header fixed*/
+main {
+    position: absolute;
+    margin-top:100px;
+    width: 97%;
+    height: 100%;
+}
+
+/* the content will have 90% of the width positioned in the center*/
+#blog_description {
+    width: 90%;
+    margin: 0px auto;
+    
+}
+
+/* the text will be of justify porperty*/
+.blog_description_parts p {
+    text-align: justify;
+}
+
+#blog_description h2, .blog_description_parts em {
+    color: #00ffff;
+}
+
+
 @media all and (min-width:0px) and (max-width: 768px) {
     /* header height 70px for mobile*/
     header {
@@ -55,6 +80,20 @@ header a {
      top: 25px;
      right: 25px;
      }
+
+    #blog_description h2 {
+        font-size:22px;
+    }
+    
+    /*hide image on mobile screen sizes*/
+    .myImg{
+        display:none;
+    }
+
+    hr {
+        background-color: #00ffff;
+        height:2px;
+    }
 }
 
 
