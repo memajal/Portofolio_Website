@@ -34,15 +34,17 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <style>
-        /*class active will have the color of active menu*/
+      /*class active will have the color of active menu
         .active {
             color: #00ffff;
         }
 
-        /*class default will have the standart color of menues*/
+        class default will have the standart color of menues
         .default {
             color: white;
         }
+
+        */
     </style>
 </head>
 
@@ -69,23 +71,20 @@
             <!-- navigation Menu in the header section for mobile -->
             <nav id="mobile-menu">
                 <a href="index.html" class="active">Home</a>
-                <a href="#about_me" class="default">About Me</a>
-                <a href="#my_projects" class="default">Portofolio</a>
-                <a href="#contact_me" class="default">Contact Me</a>
+                <a href="#about_me">About Me</a>
+                <a href="#my_projects">Portofolio</a>
+                <a href="#contact_me">Contact Me</a>
             </nav>
 
         </div>
 
         <!-- navigation Menu in the header section for desktop -->
-        <nav>
-            <div id="desktop_menu">
-                <a href="index.html" class="active">Home</a>
-                <a href="#about_me" class="default">About Me</a>
-                <a href="#my_projects" class="default">Portofolio</a>
-                <a href="#contact_me" class="default">Contact Me</a>
-
-            </div>
-        </nav>
+        <div id="desktop_menu">
+            <a href="index.html" class="presentation active">Home</a>
+            <a href="#about_me" class="about_me">About Me</a>
+            <a href="#my_projects" class="my_projects">Portofolio</a>
+            <a href="#contact_me" class="contact_me">Contact Me</a>
+        </div>
     </header>
 
     <!-- the main part of the website will have:
@@ -95,7 +94,7 @@
     <main>
 
         <!-- the presentation part of the website will have a description about me and my photo-->
-        <div id="presentation">
+        <div id="presentation" class="menu_nav_link">
             <!-- the div part of short description of me-->
             <div id="presentation_content">
                 <div id="description">
@@ -118,7 +117,7 @@
 
 
 
-        <div id="about_me">
+        <div id="about_me" class="menu_nav_link">
             <h1> About Me ...</h1>
             <!-- the div part of about me photo and buttons for Edu,Job Skills, Others-->
             <div id="about_me_content">
@@ -196,7 +195,7 @@
         </div>
 
 
-        <div id="my_projects">
+        <div id="my_projects" class="menu_nav_link">
             <h1> My Projects</h1>
 
             <!-- the div part of 5 projects that I have created-->
@@ -245,7 +244,7 @@
             <a href="#contact_me"><img class="arrow" id="arrow3" src="img/arrow.png" alt="Arrow that moves to the next section of the website" /></a>
         </div>
 
-        <div id="contact_me">
+        <div id="contact_me" class="menu_nav_link">
             <h1> Contact Me</h1>
             <h4>If you like me projects, contact me in my email, phone number or in the contact form below</h4>
             <div id="contact_me_content">
@@ -292,7 +291,7 @@
 
     </main>
 
-    
+
 
     <script>
         // when the user clickes the mobile nav, it takes the class open added to css
@@ -300,23 +299,12 @@
             document.getElementById("mobile_nav").classList.toggle("open");
         }
 
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "amemaj92@gmail.com",
-                Password: "mikimouse123",
-                To: 'amemaj92@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: document.getElementById("subject").value,
-                Body: document.getElementById("subject").value,
-            }).then(
-                message => alert("mail sent successfully")
-            );
-        }
-           
-          
-        
+
+
+
+
     </script>
+    <script src="js/scrolling.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/about_me.js"></script>
 </body>

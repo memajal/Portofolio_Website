@@ -15,6 +15,14 @@ header img {
     position: absolute;
 }
 
+header a{
+    color:white;
+    text-decoration:none;
+}
+
+    header a.active {
+        color: #00ffff;
+    }
 
  /*the header design for mobile screen sizes 0-768px, */
 
@@ -95,7 +103,6 @@ header img {
         white color and font size bold and 20px.
      */
      header #desktop_menu a {
-      text-decoration:none;
       font-size: 20px;
       font-weight: bold;
      }

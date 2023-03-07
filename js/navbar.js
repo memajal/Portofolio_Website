@@ -8,8 +8,8 @@ navbar.addEventListener("click", function () {
     var buttonClicked = event.target; // save the click event to the var buttonClicked
     if (buttonClicked.tagName == "A") { // If one of A from Navbar is clicked, set her class to active. Else let it to default
         for (var i = 0; i < buttonsArray.length; i++) {
-            if (buttonsArray[i] == buttonClicked) buttonsArray[i].className = "active";
-            else buttonsArray[i].className = "default";
+            if (buttonsArray[i] == buttonClicked) buttonsArray[i].classList.add("active");
+            else buttonsArray[i].classList.remove("active");
         }
     }
 });
@@ -23,8 +23,8 @@ navbar_mobile.addEventListener("click", function () {
     var buttonClicked = event.target;
     if (buttonClicked.tagName == "A") {
         for (var i = 0; i < buttonsArray_mobile.length; i++) {
-            if (buttonsArray_mobile[i] == buttonClicked) buttonsArray_mobile[i].className = "active";
-            else buttonsArray_mobile[i].className = "default";
+            if (buttonsArray_mobile[i] == buttonClicked) buttonsArray_mobile[i].classList.add("active");
+            else buttonsArray_mobile[i].classList.remove("active");
         }
     }
 });
@@ -42,15 +42,15 @@ document.addEventListener("click", function () {
 
         for (var i = 0; i < arrow_array.length; i++) {
             if (arrow_array[i] == buttonClicked) {
-                buttonsArray[i + 1].className = "active";
-                buttonsArray_mobile[i + 1].className = "active";
+                buttonsArray[i + 1].classList.add("active");
+                buttonsArray_mobile[i + 1].classList.add("active");
 
-                buttonsArray[0].className = "default";
-                buttonsArray_mobile[0].className = "default";
+                buttonsArray[0].classList.remove("active");
+                buttonsArray_mobile[0].classList.remove("active");
             }
             else {
-                buttonsArray[i + 1].className = "default";
-                buttonsArray_mobile[i + 1].className = "default";
+                buttonsArray[i + 1].classList.remove("active");
+                buttonsArray_mobile[i + 1].classList.remove("active");
             }
 
         }
