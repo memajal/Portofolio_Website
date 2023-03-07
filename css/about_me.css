@@ -42,15 +42,15 @@
 }
 
 /* dowload CV button design*/
-#download_cv {
+#download_cv, #button_mobile {
     position: relative;
     margin: 20px auto;
     width: 140px;
     height: 40px;
     border-color: aqua;
     background-color: black;
-    color:white;
-    cursor:pointer;
+    color: white;
+    cursor: pointer;
 }
 
 #about_me .fa-download {

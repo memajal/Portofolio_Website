@@ -90,6 +90,10 @@ h1, h2, p {
         font-size: 1em;
     }
 
+    #arrow1{
+        margin-top:20px;
+    }
+
 
    }
 
@@ -116,6 +120,11 @@ h1, h2, p {
     p {
         font-size: 1.1em;
     }
+
+    #arrow1 {
+        margin-top: 20px;
+    }
+
    }
 
 /* css the different presentation design for small screen sizes from 481-568px &
