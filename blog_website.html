@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- add metta content of my portofolio website-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the personal web developer portofolio of Alketa Memaj">
+    <meta name="author" content="Alketa Memaj">
+
+    <!-- add title of my portofolio website-->
+    <title>Alketa Memaj WebDev Portofolio</title>
+
+    <!-- add logo of my portofolio website-->
+    <link rel="icon" href="img/logo.png">
+
+    <!-- add css files that have the specific style for specific parts of the website-->
+    <link rel="stylesheet" href="css/projects.css" />
+
+    <!-- add the font that I will use in my page Jellee font-->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/jellee-typeface" type="text/css" />
+    <!-- add the icon library-->
+
+    <style>
+        /*class active will have the color of active menu*/
+        .active {
+            color: #00ffff;
+        }
+
+        /*class default will have the standart color of menues*/
+        .default {
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+
+        <!-- The header contains the logo that I have created plus
+        the link to return back to home page, that is the same for every screen sizes-->
+        <img id="logo" src="img/logo.png" />
+        <a href="index.html" class="default"> << Back to Home</a>
+
+    </header>
+
+    <main>
+        <div id="blog_description">
+            <h2> My blog website description</h2>
+
+            <div class="blog_description_parts">
+                <p>
+                    This website has the idea of creating a blog with articles about:
+                    <em>bio food, exercises, health and skin care.</em>
+                    The idea is simple.
+
+                    <br />
+                    <br />
+                    The home page has a navigation menu that includes all the categories discribed above.
+                    It includes a database that has the catogory( specifically all the menus above), the title, the descrpition, the author and the date.
+                </p>
+
+                <img src="img/BlogWebsite1.jpg" class="myImg" />
+            </div>
+            <hr>
+
+            <div class="blog_description_parts">
+
+                <img src="img/BlogWebsite2.jpg" class="myImg" />
+
+                <p>
+                    The Home menu includes a <em> slideshow </em>, made with <em> JavaScript</em> that change every 3 seconds.
+                    It takes from the databese the last 3 articles ordered by date, using <em>PHP and MySQL </em>and shows in
+                    the page on photo of the article,the title and a short description.
+                    <br />
+                    <br />
+                    The Home menu, also takes all the last articles by the database ordered by date, using <em>PHP and MySQL</em>,
+                    and shows them in page including a photo, the title, a short description and the author and the date.
+                </p>
+            </div>
+            <hr />
+
+            <!-- images displaying only on screen sizes from 568 - 769px-->
+            <div class="image_mobile">
+                <img src="img/BlogWebsite1.jpg" class="myImg_mobile" />
+                <img src="img/BlogWebsite2.jpg" class="myImg_mobile" />
+            </div>
+
+            <div class="blog_description_parts">
+
+                <p>
+                    Every other category has the same idea as home. The technics used are the same.
+                    The only differnce in the code is that it select the articles of the
+                    specific category. This is also made with <em>PHP and MySql Select </em>function.
+                </p>
+
+                <img src="img/BlogWebsite3.jpg" class="myImg" />
+
+            </div>
+            <hr />
+
+            <!-- images displaying only on screen sizes from 568 - 769px-->
+            <div class="image_mobile">
+                <img src="img/BlogWebsite3.jpg" class="myImg_mobile" />
+                <img src="img/BlogWebsite4.jpg" class="myImg_mobile" />
+            </div>
+
+            <div class="blog_description_parts">
+                <img src="img/BlogWebsite4.jpg" class="myImg" />
+
+                <p>
+                    The user can click in the photo or in the title of every article and this is <em>conected with PHP with the specific article clicked.</em>
+                    This opens a page of every article that has the title the descripton, 2 photos.
+                    <br />
+                    And in the right side of the page it shows the location of
+                    where the user is and the last 8 articles posted with the specific category.
+                </p>
+            </div>
+            <hr />
+
+            <div class="blog_description_parts">
+                <p>
+                    <em>The toogle mobile menu</em> is also made with JavaScript. It opens a curtain with the menu links when clicked and closes it when <em>X</em>
+                    is clicked.
+                    <br />
+                    <br />
+                    The website also has a <em>pagination</em>, showing in every page the specific number of articles.
+                    This is made with <em>SQL</em>, calculating with ceil function the number of pages based on the number of articles that are in the database.
+                </p>
+
+                <img src="img/BlogWebsite5.jpg" class="myImg" />
+            </div>
+            <hr />
+
+            <!-- images displaying only on screen sizes from 568 - 769px-->
+            <div class="image_mobile">
+                <img src="img/BlogWebsite5.jpg" class="myImg_mobile" />
+            </div>
+
+            <!-- div class that contain the links of the website and github code-->
+            <div class="blog_links">
+                <p>
+                    I am presanting below the link where you can see the website, naturalist, how it works.
+                </p>
+                <a href=""> Naturalist Website</a>
+                <p>
+                    I am also presanting the github link where you can find the the code I have used.
+                </p>
+                <a href=""> Naturalist GitHub Code</a>
+            </div>
+
+            <!-- the content that will be displayed when the user cliks in an image-->
+            <div id="img_zoom">
+                <span id="close">&times;</span> <!-- close button-->
+                <img src="" id="img_zoom_content" />
+            </div>
+        </div>
+
+    </main>
+
+<script src="js/image_zoom.js"></script>
+</body>
+ </html>

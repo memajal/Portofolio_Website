@@ -1,0 +1,237 @@
+﻿
+/* body elements of every my project page*/
+body {
+    font-family: 'JelleeBold';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #262626;
+    color: white;
+    text-align:center;
+}
+
+/* header position fixed*/
+header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212121;
+}
+
+header img {
+    position: absolute;
+ }
+
+/* header a position and color*/
+header a {
+ position:absolute;
+ color: inherit;
+ text-decoration: inherit;
+ }
+
+/* header a when the user hover*/
+ header a:hover {
+   color: #00ffff;
+  }
+
+ /* main position and width over the header fixed*/
+main {
+    position: absolute;
+    margin-top: 70px;
+    width: 97%;
+    height: 100%;
+}
+
+/* the content will have 90% of the width positioned in the center*/
+#blog_description {
+    width: 90%;
+    margin: 0px auto;
+}
+
+/* the text will be of justify porperty*/
+.blog_description_parts p {
+    text-align: justify;
+}
+
+#blog_description h2, .blog_description_parts em {
+    color: #00ffff;
+}
+
+/* add a padding at the end of the page*/
+.blog_links {
+    padding-bottom: 50px;
+}
+
+    .blog_links a {
+        color: #00ffff;
+        font-size: 15px;
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+.image_mobile, .myImg{
+    display:none;
+    cursor: zoom-in;
+}
+
+/* styling the content that will be displayed 
+    when the user clicks in an image*/
+#img_zoom {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+    #img_zoom img {
+        height: 90%;
+    }
+
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+    #close:hover {
+        color: #00ffff;
+        cursor:pointer;
+    }
+
+
+
+@media all and (min-width:0px) and (max-width: 768px) {
+    /* header height 70px for mobile*/
+    header {
+        height: 70px; /*header height 70px for mobile*/
+    }
+
+   /*the header image will be position in the left of the header with 50px width and height*/
+    header img  {
+     top: 10px;
+     left: 10px;
+     width: 50px;
+     height: 50px;
+    }
+
+   /* header a top and right and font size for mobile screen sizes*/ 
+    header a {
+     font-size: 15px;
+     top: 25px;
+     right: 25px;
+     }
+
+    #blog_description h2 {
+        font-size:22px;
+    }
+    
+    /*hide image on mobile screen sizes*/
+    .myImg, .image_mobile {
+        display: none;
+    }
+
+    hr {
+        background-color: #00ffff;
+        height:2px;
+    }
+
+}
+
+@media all and (min-width:769px) and (max-width: 1200px) {
+
+    header {
+        height: 70px;
+    }
+
+    /*the header image will be position in the left of the header with 50px width and height*/
+    header img {
+        top: 10px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* header a top and right and font size for desktop screen sizes*/
+    header a {
+        font-size: 15px;
+        top: 25px;
+        right: 50px;
+    }
+
+    #blog_description {
+        width: 80%;
+    }
+
+    /* show only the image for tablet screen sizes*/
+    .image_mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2%;
+    }
+
+        .image_mobile img {
+            width: 35%;
+        }
+
+}
+
+@media all and (min-width:1201px) {
+   /* header height 100px for desktop*/
+    header {
+     height: 100px;
+     }
+
+    main{
+        margin-top:100px;
+    }
+
+   /*the header image will be position in the left of the header with 50px width and height*/
+    header img {
+      top: 15px;
+     left: 20px;
+     width: 70px;
+     height: 70px;
+    }
+
+   /* header a top and right and font size for desktop screen sizes*/
+    header a {
+     font-size: 20px;
+     top: 40px;
+     right: 50px;
+    }
+
+  .blog_description_parts {
+   display: flex;
+   flex-direction: row;
+    justify-content: center;
+   }
+
+   .blog_description_parts p {
+     width: 40%;
+    line-height: 30px;
+      text-align: center;
+      letter-spacing: 2px;
+     }
+
+    .myImg {
+      display:block;
+      margin:auto 0px;
+      width: 30%;
+      height:30%;
+      }
+    }
+
