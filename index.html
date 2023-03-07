@@ -270,17 +270,13 @@
                     </p>
                 </div>
 
-                <form id="contact_me_form" method="post">
-
-                    <label id="email_label">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Contact Email..." required />
-
+                <form id="contact_me_form" method="get" action="mailto:amemaj92@gmail.com">
 
                     <label id="co_name_label">Subject</label>
                     <input type="text" id="subject" name="subject" placeholder="Subject..." required />
 
                     <label id="subject_label">Message</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
+                    <textarea id="body" name="body" placeholder="Write something.." required></textarea>
 
                     <input id="submit" type="submit" value="Send Email" onclick="sendEmail()" />
 
@@ -298,10 +294,6 @@
         function openNav() {
             document.getElementById("mobile_nav").classList.toggle("open");
         }
-
-
-
-
 
     </script>
     <script src="js/scrolling.js"></script>
