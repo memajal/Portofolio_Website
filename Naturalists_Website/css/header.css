@@ -1,0 +1,37 @@
+
+/* align all elements in center*/
+body {
+    text-align: center;
+}
+
+/* set the background color of the header image to black*/
+#logo_desktop {
+    background-color: black;
+}
+
+/*set the width and the height of the logo*/
+#logo_desktop img {
+    width: 300px;
+    height: 70px;
+}
+
+/*the menu will be in center with 20px and bold style*/
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* the menu links will have 5px padding and 1px border white*/
+header li {
+    padding: 5px;
+    border: 1px solid white;
+}
+
+#menu a{
+    text-decoration:none;
+    color:black;
+}
