@@ -46,9 +46,23 @@ input[type=submit] {
     cursor: pointer;
 }
 
+#last_button{
+    display:flex;
+    justify-content:flex-end;
+}
+
+#back_on_top {
+    width: 140px;
+    height: 40px;
+    border-color: aqua;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
 /* css design for small screen sizes from 0 to 768px*/
 @media all and (min-width:0px) and (max-width: 768px) {
-
     #contact_me h4{
         width:90%;
         }
@@ -60,7 +74,7 @@ input[type=submit] {
         justify-content: center;
     }
 
-    #contact_me_form, #contact_information {
+    #contact_me_form, #contact_information, #last_button {
         width: 90%;
         margin: auto;
     }
@@ -79,14 +93,27 @@ input[type=submit] {
     #contact_me textarea {
         height: 8em;
     }
+
+    #back_on_top{
+        margin-top:75px;
+    }
 }
 
 /* for screen sizes 569-768px the images occupy 70% of screen sizes*/
 @media all and (min-width:481px) and (max-width: 768px) {
 
-    #contact_me {
+    #contact_me, #last_button {
         width: 80%;
-        margin:auto;
+        margin: auto;
+    }
+
+    #last_button {
+        width: 90%;
+        margin: auto;
+    }
+
+    #back_on_top {
+        margin-top: 60px;
     }
 }
 
@@ -95,7 +122,7 @@ input[type=submit] {
 
     h4 {
         width: 85%;
-        margin:auto;
+        margin: auto;
     }
 
     /*display the 2 divs as 2 rows */
@@ -105,25 +132,41 @@ input[type=submit] {
         justify-content: space-around;
     }
 
-    #contact_information{
-        width:35%;
-        margin-top:10px;
+    #contact_information {
+        width: 35%;
+        margin-top: 10px;
     }
 
-    #contact_me_form{
-        width:45%;
+    #contact_me_form {
+        width: 45%;
     }
 
     #contact_me textarea {
         height: 10em;
     }
+
+    #last_button {
+        width: 90%;
+        margin: auto;
+    }
+
+    #back_on_top {
+        margin-top: 70px;
+    }
 }
-
-
 /* css about me design for desktop large screen sizes more than 1200px */
 @media all and (min-width:1201px) {
 
     #contact_information {
         width: 30%;
+    }
+
+    #last_button {
+        width: 85%;
+        margin: auto;
+    }
+
+    #back_on_top {
+        margin-top: 150px;
     }
 }
