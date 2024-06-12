@@ -1,12 +1,12 @@
 ﻿
 /* body elements of every my project page*/
 body {
-    font-family: 'JelleeBold';
+    font-family: "Francois One", sans-serif;
     font-weight: normal;
     font-style: normal;
     background-color: #262626;
     color: white;
-    text-align:center;
+    text-align: center;
 }
 
 /* header position fixed*/
