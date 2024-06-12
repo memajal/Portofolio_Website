@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/contact_me.css" />
 
 
+
     <!-- add the font that I will use in my page Jellee font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -172,6 +173,7 @@
 
                 <!-- download cv button that will be displayed for mobile screen sizes
                 at the end of the tablinks and will be hidden for desktop screen sizes-->
+
                 <button class="btn" id="button_mobile"><i class="fa fa-download"><a href="cv.pdf" download> </i> Download my CV</a></button>
 
             </div>
@@ -261,10 +263,12 @@
             </div>
             <div id="last_button">
                 <a href="index.html"><button id="back_on_top"> Back on Top </button></a>
+
             </div>
         </div>
 
     </main>
+
 
     
 
@@ -278,5 +282,13 @@
     <script src="js/scrolling.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/about_me.js"></script>
+=======
+    <script>
+       // when the user clickes the mobile nav, it takes the class open added to css
+        function openNav() {
+            document.getElementById("mobile_nav").classList.toggle("open");
+        }
+     </script>
+     <script src="js/navbar.js"></script>
 </body>
 </html>
