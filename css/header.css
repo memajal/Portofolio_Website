@@ -20,10 +20,11 @@ header a{
     text-decoration:none;
 }
 
-    header a.active {
+    header a.active, a:hover {
         color: #00ffff;
     }
 
+   
  /*the header design for mobile screen sizes 0-768px, */
 
 @media all and (min-width:0px) and (max-width: 768px) {
