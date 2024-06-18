@@ -31,6 +31,11 @@ because of the header menu displayed on top*/
     border: thin #00ffff solid;
 }
 
+    .my_project_box:hover {
+        -webkit-box-shadow: 3px 2px 11px 16px #000000;
+        box-shadow: 3px 2px 11px 16px #000000;
+    }
+
 /* the image has 90% of the box*/
 .my_project_box img {
     border: thin #00ffff solid;
@@ -38,6 +43,13 @@ because of the header menu displayed on top*/
     width: 90%;
     height: 92%;
 }
+
+    .my_project_box img:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+
     
 /* the span is in the center of the box*/
 .my_project_box span {

@@ -36,12 +36,31 @@ header a {
   }
 
  /* main position and width over the header fixed*/
+
 main {
-    position: absolute;
-    margin-top: 70px;
-    width: 97%;
-    height: 100%;
+    text-align: center;
+    margin: 70px auto;
+    width: 90%;
 }
+    /* main position and width over the header fixed*/
+    main p {
+        text-align: justify;
+    }
+
+    main h2, h3, a {
+        color: #00ffff;
+    }
+
+    main a {
+        font-size: 15px;
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+        main a:hover {
+            color: white;
+            text-decoration: none;
+        }
 
 /* the content will have 90% of the width positioned in the center*/
 #blog_description {
@@ -119,33 +138,24 @@ main {
         height: 70px; /*header height 70px for mobile*/
     }
 
-   /*the header image will be position in the left of the header with 50px width and height*/
-    header img  {
-     top: 10px;
-     left: 10px;
-     width: 50px;
-     height: 50px;
-    }
+        /*the header image will be position in the left of the header with 50px width and height*/
+        header img {
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+        }
 
-   /* header a top and right and font size for mobile screen sizes*/ 
-    header a {
-     font-size: 15px;
-     top: 25px;
-     right: 25px;
-     }
-
-    #blog_description h2 {
-        font-size:22px;
-    }
+        /* header a top and right and font size for mobile screen sizes*/
+        header a {
+            font-size: 15px;
+            top: 25px;
+            right: 25px;
+        }
     
     /*hide image on mobile screen sizes*/
     .myImg, .image_mobile {
         display: none;
-    }
-
-    hr {
-        background-color: #00ffff;
-        height:2px;
     }
 
 }
@@ -171,7 +181,7 @@ main {
         right: 50px;
     }
 
-    #blog_description {
+    main {
         width: 80%;
     }
 
@@ -190,42 +200,46 @@ main {
 }
 
 @media all and (min-width:1201px) {
-   /* header height 100px for desktop*/
+    /* header height 100px for desktop*/
     header {
-     height: 100px;
-     }
-
-    main{
-        margin-top:100px;
+        height: 100px;
     }
 
-   /*the header image will be position in the left of the header with 50px width and height*/
-    header img {
-      top: 15px;
-     left: 20px;
-     width: 70px;
-     height: 70px;
+        /*the header image will be position in the left of the header with 50px width and height*/
+        header img {
+            top: 15px;
+            left: 20px;
+            width: 70px;
+            height: 70px;
+        }
+
+        /* header a top and right and font size for desktop screen sizes*/
+        header a {
+            font-size: 20px;
+            top: 40px;
+            right: 50px;
+        }
+
+    main {
+        margin-top: 100px;
+        width: 70%;
+        margin-left: 15%;
     }
 
-   /* header a top and right and font size for desktop screen sizes*/
-    header a {
-     font-size: 20px;
-     top: 40px;
-     right: 50px;
+    .blog_description_parts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 70px;
     }
 
-  .blog_description_parts {
-   display: flex;
-   flex-direction: row;
-    justify-content: center;
-   }
-
-   .blog_description_parts p {
-     width: 40%;
-    line-height: 30px;
+     .blog_description_parts p {
+       width: 40%;
+      line-height: 30px;
       text-align: center;
       letter-spacing: 2px;
      }
+
 
     .myImg {
       display:block;

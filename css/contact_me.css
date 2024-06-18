@@ -61,6 +61,11 @@ input[type=submit] {
     animation: pulse-black 2s infinite;
 }
 
+#back_on_top:hover{
+ background-color:aqua;
+ color:black;
+}
+
 /* arrow animation pulse back*/
 @keyframes pulse-black {
     0% {
